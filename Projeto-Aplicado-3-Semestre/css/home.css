@@ -167,12 +167,15 @@ button {
 .especialidades-bg {
     background: #f2f2f2;
     height: 657px;
+    display: grid;
+    
 }
 
 .especialidades-titulo {
-    display: flex;
-    align-items: baseline;
-    margin-top: -100px;
+    font-family: Jim Nightshade;
+    font-size: 64px;
+    font-weight: 100;
+
 
 }
 
@@ -185,10 +188,9 @@ button {
 
 .especialidades-cardapio {
     display: flex;
-    width: 300px;
-    align-items: center;
     gap: 20px;
-    margin-left: -80px;
+    
+    
 
 }
 
@@ -196,6 +198,7 @@ button {
     background: #fff;
     border-radius: 25px;
     padding: 15px 15px 30px 15px;
+    
 }
 
 .especialidades-subtitulo {
@@ -216,15 +219,66 @@ button {
     color: #FFB000;
 }
 
-.galeria {
-    text-align: center;
-    align-items: center;
-    display: grid;
+.botao-especialidade {
+    justify-content: center;
 }
+
+.galeria{
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.galeria-img{
+    display: grid;
+    width: 1078px;
+    grid-template-columns: repeat(9, 120px);
+    grid-template-rows: repeat(2,24vh);
+    column-gap: .5em;
+    row-gap: .5em;
+}
+
+.galeria-img img{
+    grid-column: auto / span 3;
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+}
+#dois{
+    grid-row: span 2;
+}
+
+#normal {
+    grid-column: span 2;
+}
+
+#meio{
+    grid-column:  span 4;
+}
+
+.galeria-link{
+    background: #FFB000;
+    border-radius: 4px;
+    padding: 10px 20px 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10vh;
+    justify-content: center;
+
+}
+
 
 .galeria-titulo {
     display: flex;
     align-items: baseline;
+    justify-content: center;
 }
 
 .funcionamento-bg {
